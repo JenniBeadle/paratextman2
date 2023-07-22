@@ -35,10 +35,47 @@
 }
 */
 
+  @page {
+    size: A5  
+    margin: 40,40,80,40;
+}
+  img {
+    max-width: 100%;
+}
+/* styles for the left hand spread 
+Bottom right book title, bottom left current page */
+@page:left {
+
+  @bottom-right {
+      margin: 10pt 0 30pt 0;
+      border-top: .25pt solid #666;
+        content: "Paratext";
+      font-size: 9pt;
+      color: #333;
+  }
+  @bottom-left { 
+      margin: 10pt 0 30pt 0;
+      border-top: .25pt solid #666;
+      content: counter(page);
+      font-size: 9pt;
+  }
+}
+
   @media print {
     /* This should be A5
     and (max-width: 13cm)
     */
+
+    /* get the title of the current chapter - this will be the content of the h1 
+reset figure counter as figures start from 1 in each chapter */
+
+  h1 {
+    string-set: doctitle content();
+    page-break-before: always;
+    counter-reset: figurenum;
+    counter-reset: footnote;
+    line-height: 1.2;
+}
 
     
     /*---------------------- Begin Paper Saver  ---------------------------*/
