@@ -147,10 +147,11 @@ reset figure counter as figures start from 1 in each chapter */
 
      /*---------------------- End Scratch Margins  ---------------------------*/
 
-     /* .theme-doc-breadcrumbs */ 
+     /* .theme-doc-breadcrumbs  
      .theme-doc-version-badge { 
       margin-left: -1cm;
-     }
+     }*/
+    
     h1 {
       font-size: 150% !important;
       margin-left: -1.5cm;
