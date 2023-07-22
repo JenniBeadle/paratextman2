@@ -8,7 +8,7 @@ slug: /
 
 ----
 
-### Quoi do neuf - [Paratext 9.x](Training-Manual/00-Whats-new.md)
+### Quoi do neuf - [Paratext 9.3](Training-Manual/00-Whats-new.md)
 
 ----
 
